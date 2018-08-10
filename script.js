@@ -1,4 +1,4 @@
-// 5 parts of this Tic Tac Toe Game
+1// 5 parts of this Tic Tac Toe Game
 // 1. Initialize States
 
 window.onload = function() {
@@ -43,32 +43,32 @@ window.onload = function() {
     function boxClick(numId) {
         var box = document.getElementById(numId);
         var content = box.getContext("2d");
-
-        switch(numId) {
-            case "canvas1": num = 1;
-                            break;
-            case "canvas2": num = 2;
-                            break;
-            case "canvas3": num = 3;
-                            break;
-            case "canvas4": num = 4;
-                            break;
-            case "canvas5": num = 5;
-                            break;
-            case "canvas6": num = 6;
-                            break;
-            case "canvas7": num = 7;
-                            break;
-            case "canvas8": num = 8;
-                            break;
-            case "canvas9": num = 9;
-                            break;
-        }
+       
+        // switch(numId) {
+        //     case "canvas1": num = 1;
+        //                     break;
+        //     case "canvas2": num = 2;
+        //                     break;
+        //     case "canvas3": num = 3;
+        //                     break;
+        //     case "canvas4": num = 4;
+        //                     break;
+        //     case "canvas5": num = 5;
+        //                     break;
+        //     case "canvas6": num = 6;
+        //                     break;
+        //     case "canvas7": num = 7;
+        //                     break;
+        //     case "canvas8": num = 8;
+        //                     break;
+        //     case "canvas9": num = 9;
+        //                     break;
+        // }
 
         //Instagram Account @kclay15 helped me refactor the code above
-
-        // num = parseInt(numID.charAt(numID.length -1))
-
+        //This will take the last number in the string, convert it into an integer, and assign a number to it.
+        num = parseInt(numId.charAt(numId.length - 1 ));
+        
         //4. Draw the shapes on the canvas
         if(filled[num-1] == false) {
             if (gameOver == false ) {

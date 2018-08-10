@@ -57,7 +57,6 @@ button {
 
 button:hover { 
     background: #39BCD4;
-
 }
 
 canvas:hover {
@@ -72,16 +71,23 @@ canvas:hover {
     margin: 25% 0 5% 0;
 }
 
-
 #results {
     font-size: 50px;
     text-align: center;
     margin-bottom: 30px;
     margin-top: 30px;
     width: 600px;
-    float: left;
-    
+    float: left; 
 }
+
+h2#result {
+    margin: auto;
+    margin-bottom: 40px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px 10px rgba(219, 239, 243, 0.50);
+}
+
 #new-game {
     width: 300px;
     margin: auto 0;
@@ -95,7 +101,6 @@ canvas:hover {
     border: 1px solid#9EDEE9;
     background-color: white;
 }
-
 
 #primary-blue {
     color: #39BCD4;
@@ -116,8 +121,7 @@ canvas:hover {
     top: 0;
     right: 0;
     bottom: 0;
-    left: 0;
-    
+    left: 0;  
 }
 
 .box {
@@ -126,6 +130,7 @@ canvas:hover {
   box-sizing: border-box;
   position: relative;
 }
+
   .box:first-child {
     border-top: 0;
     border-left: 0;
@@ -179,16 +184,17 @@ section {
     position: static;
     width: 100%;
     }
+
 header {
     padding-top: 80px;
     padding-bottom: 80px;
     text-align: center;
     width: 100%;
     }    
+
 #playground {
     width: 450px;
-}   
-    
+    }   
 }
 
 @media (max-width: 1024px) { 
@@ -196,42 +202,51 @@ header {
         width: 100%;
         font-size: 65px;
         }
+
     #secondary-blue {
         font-size: 55px;
         }
+
     #primary-blue {
         font-size: 55px;
         } 
 }
+
 @media (max-width: 425px) { 
     #playground {
         width: 95%;
     }
+
     #head {
         width: 100%;
         font-size: 40px;
-        }
+    }
+
     #secondary-blue {
         font-size: 40px;
-        }
+    }
+
     #primary-blue {
         font-size: 40px;
-        } 
+    } 
 }
 
     @media (min-width: 300px) {       
 header {
     padding-top: 20px;
     padding-bottom: 40px;
-    }
+}
+
 div {
     margin: 0;
-    }
+}
+
 .columns {
     width: 90px;
     height: 90px;
 }
+
 #new-game {
     width: 200px;
-}
+    }
 }
