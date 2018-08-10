@@ -103,16 +103,21 @@ window.onload = function() {
                     //We are checking character[0] , character[1], character[2]
                     if((character[winner[j][0]] == s) && (character[winner[j][1]] == s) && (character[winner[j][2]] == s)) {
                         document.getElementById("result").innerText = "Player " + s + " won!";
-                        gameover = true;
+                        gameOver = true;
                     }
+                }
+                //draw condition
+                //If turn > 9 or gameOver == false;
+                if(turn > 9 && gameOver != true) {
+                    document.getElementById("result").innerText = "Game Over! It was a draw.";
                 }
             }
             else {
-
+                alert("Hey, what are you doing? The game is over silly! Click the 'Play Again' to test your fate yet again.");
             }
         }
         else {
-
+                alert("Oh, so are you trying to cheat!? That box is filled. Click another one.")
         }
     }
 
