@@ -64,6 +64,11 @@ window.onload = function() {
             case "canvas9": num = 9;
                             break;
         }
+
+        //Instagram Account @kclay15 helped me refactor the code above
+
+        // num = parseInt(numID.charAt(numID.length -1))
+
         //4. Draw the shapes on the canvas
         if(filled[num-1] == false) {
             if (gameOver == false ) {
